@@ -35,7 +35,7 @@ If you have been using TinyMCE before, you have to brute-force replace `tinymce`
 ## Integrations with Frameworks
 - [HugeRTE Vue integration](https://github.com/hugerte/hugerte-vue)
 
-Integrations for Svelte, React, Angular, Blazor and Ruby on Rails are following.
+Integrations for Svelte, React, Angular, Blazor, jQuery and Ruby on Rails are following.
 
 ## Localization
 Download the [TinyMCE 6 language pack](https://download.tiny.cloud/tinymce/community/languagepacks/6/langs.zip), extract the languages you need, open all the files of the languages you need and replace the `tinymce` variable at the top by `hugerte`. Then, follow the [instructions by TinyMCE](https://www.tiny.cloud/docs/tinymce/6/ui-localization/#using-the-community-language-packs).
