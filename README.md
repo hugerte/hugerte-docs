@@ -10,11 +10,25 @@ The simplest way to get started with HugeRTE is using a CDN:
 <script src="https://cdn.jsdelivr.net/npm/hugerte@1.0.4/hugerte.min.js">
 ```
 
-Or install it manually via `npm`:
+Or install it manually via `npm` or `yarn`:
 
 ```bash
 npm i hugerte
 ```
+
+or:
+
+```bash
+yarn add hugerte
+```
+
+You can also install it via composer:
+
+```bash
+composer require hugerte/hugerte
+```
+
+If you don't use an npm- or packagist-based package manager, you can also get the latest release as zip on the [hugerte-dist GitHub tags page](https://github.com/hugerte/hugerte-dist/tags).
 
 In this repo, we want to provide docs for HugeRTE that are freely usable. The text of this docs is licensed under the MIT license, but code snippets are licensed under the BSD Zero Clause license so you can quickly copy them into your project without worrying about attribution.
 These docs are stil in an Alpha stage. You'll mostly have to check the [TinyMCE 6 docs](https://tiny.cloud/docs/tinymce/6). We want to write the docs in our own words instead of forking the TinyMCE docs because the latter are licensed under a [CC BY-NC-SA license](https://github.com/tinymce/tinymce-docs/blob/main/LICENSE.txt) which we don't want to use. See [this informative line](https://github.com/hugerte/hugerte-website/blob/1eccf2841473af46b3aa995dfcea11925c272620/index.php#L25) also.
