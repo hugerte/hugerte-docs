@@ -33,9 +33,12 @@ Important links:
 If you have been using TinyMCE before, you have to brute-force replace `tinymce` by `hugerte` in your code. In your package.json, make sure you use `1.0.4` as `hugerte` version – not the one you used for `tinymce` before. HugeRTE is based on TinyMCE 6.8.4, but it is even later because it contains some code from TinyMCE 7 (all until the [commit which changed the license](https://github.com/tinymce/tinymce/commit/1cfe7f6817c68d713971a3e1dbe0c9775a40ce6d)). See the [Changelog](https://github.com/hugerte/hugerte/blob/main/modules/hugerte/CHANGELOG.md) for details.
 
 ## Integrations with Frameworks
-- [HugeRTE Vue integration](https://github.com/hugerte/hugerte-vue)
+- Vue integration: View the [docs](integrations/vue.md) or [repo](https://github.com/hugerte/hugerte-vue).
 
 Integrations for Svelte, React, Angular, Blazor, jQuery and Ruby on Rails are following.
+
+## Bundling: Not supported yet
+You might want to bundle HugeRTE into your JavaScript output build using a bundler like Webpack or Vite. This procedure, however, is complex and error-prone at the time and therefore not recommended or supported by us. We're going to, however, work on fixing the issues that occur when bundling and providing appropiate documentation for it after that. For now, if using a bundler, you should use a plugin like [vite-plugin-static-copy](https://www.npmjs.com/package/vite-plugin-static-copy) or [copy-webpack-plugin](npmjs.com/package/copy-webpack-plugin) to copy the whole `ǹode_modules/hugerte` folder to your public directory without modifying its contents (while adding a hash to the copied `hugerte` folder itself is recommended).
 
 ## Localization
 Download the [TinyMCE 6 language pack](https://download.tiny.cloud/tinymce/community/languagepacks/6/langs.zip), extract the languages you need, open all the files of the languages you need and replace the `tinymce` variable at the top by `hugerte`. Then, follow the [instructions by TinyMCE](https://www.tiny.cloud/docs/tinymce/6/ui-localization/#using-the-community-language-packs).
