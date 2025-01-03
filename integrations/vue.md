@@ -31,6 +31,10 @@ yarn add @hugerte/hugerte-vue
 
 Then, copy the demo that is appropriate for you from the repo linked above. **Replace `import Editor from "/@/main/ts/index"` by `import Editor from '@hugerte/hugerte-vue'`.** If your code will contain non-trivial portions of demo code, add the text of the [LICENSE.txt](LICENSE.txt) file as a comment to your code or on some „Acknowledgements“ page to ensure legal compliance.
 
+## Migrating from the TinyMCE Vue component
+1. Replace `tinymce` by `hugerte` (`@tinymce/tinymce-vue` to `@hugerte/hugerte-vue`).
+2. Review the changed props in the [changelog](https://github.com/hugerte/hugerte-vue/blob/main/CHANGELOG.md).
+
 ## Storybook
 The repo also comes with a storybook. The storybook does not contain as many demos as the demos above, but it does show the basic abilities to use HugeRTE in an iframe, in inline mode, with synchronization between the editor and a textarea containing its HTML content output, and in disabled mode.
 
