@@ -7,7 +7,7 @@ This repo contains documentation for the [HugeRTE](https://github.com/hugerte/hu
 The simplest way to get started with HugeRTE is using a CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/hugerte@1.0.4/hugerte.min.js">
+<script src="https://cdn.jsdelivr.net/npm/hugerte@1/hugerte.min.js">
 ```
 
 Or install it manually via `npm` or `yarn`:
