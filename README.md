@@ -48,8 +48,9 @@ If you have been using TinyMCE before, you have to brute-force replace `tinymce`
 
 ## Integrations with Frameworks
 - Vue integration: View the [docs](integrations/vue.md) or [repo](https://github.com/hugerte/hugerte-vue).
+- React integration: View the [docs](integrations/react.md) or [repo](https://github.com/hugerte/hugerte-react).
 
-Integrations for Svelte, React, Angular, Blazor, jQuery and Ruby on Rails are following.
+Integrations for Svelte, Angular, Blazor, jQuery and Ruby on Rails are following.
 
 ## Bundling: Not supported yet
 You might want to bundle HugeRTE into your JavaScript output build using a bundler like Webpack or Vite. This procedure, however, is complex and error-prone at the time and therefore not recommended or supported by us. We're going to, however, work on fixing the issues that occur when bundling and providing appropiate documentation for it after that. For now, if using a bundler, you should use a plugin like [vite-plugin-static-copy](https://www.npmjs.com/package/vite-plugin-static-copy) or [copy-webpack-plugin](npmjs.com/package/copy-webpack-plugin) to copy the whole `ǹode_modules/hugerte` folder to your public directory without modifying its contents (while adding a hash to the copied `hugerte` folder itself is recommended).
