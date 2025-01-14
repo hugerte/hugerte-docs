@@ -52,8 +52,66 @@ If you have been using TinyMCE before, you have to brute-force replace `tinymce`
 
 Integrations for Svelte, Angular, Blazor, jQuery and Ruby on Rails are following.
 
-## Bundling: Not supported yet
-You might want to bundle HugeRTE into your JavaScript output build using a bundler like Webpack or Vite. This procedure, however, is complex and error-prone at the time and therefore not recommended or supported by us. We're going to, however, work on fixing the issues that occur when bundling and providing appropiate documentation for it after that. For now, if using a bundler, you should use a plugin like [vite-plugin-static-copy](https://www.npmjs.com/package/vite-plugin-static-copy) or [copy-webpack-plugin](npmjs.com/package/copy-webpack-plugin) to copy the whole `ǹode_modules/hugerte` folder to your public directory without modifying its contents (while adding a hash to the copied `hugerte` folder itself is recommended).
+## Bundling
+
+You can bundle all required files from HugeRTE into your JavaScript bundle using ES6 module importing syntax and Vite. We're going to check support for other bundlers in the future, too. TinyMCE already [provides docs for bundling](https://www.tiny.cloud/docs/tinymce/6/introduction-to-bundling-tinymce/) but it has an issue with bundling skins that we [fixed](https://github.com/hugerte/hugerte/commit/d62ccbfb11583b5ebb4177986666039da2fe50de) in HugeRTE 1.0.7.
+
+> [!WARNING]
+> Make sure you're using HugeRTE 1.0.7 or later so everything works.
+
+The following code snippet demonstrates how to bundle HugeRTE in your project.
+
+```js
+// Required parts
+
+// The HugeRTE global. This must be before other HugeRTE imports.
+import hugerte from 'hugerte';
+
+// The following imports can be in any order.
+
+// The DOM model
+import 'hugerte/models/dom';
+
+// The default icons. This is required, but you can import custom icons after it.
+import 'hugerte/icons/default';
+
+// The silver theme. Customization of the look and feel of HugeRTE should be done by custom skins while still using the silver theme.
+import 'hugerte/themes/silver';
+
+// The oxide skin (or you can use a custom one).
+import 'hugerte/skins/ui/oxide';
+
+// The content skin provided by oxide (or a different skin you're using).
+import 'hugerte/skins/ui/oxide/content.js';
+
+// The default content CSS. This can also be replaced by a custom file if needed.
+import 'hugerte/skins/content/default/content.js';
+
+// Plugins are optional
+// This should correspond to your `plugins` config in the object passed to `hugerte.init()`.
+import 'hugerte/plugins/accordion';
+import 'hugerte/plugins/advlist';
+// etc. for the plugins you're using.
+
+// NOTE: For the emoticons plugin, you'll need two imports:
+import 'hugerte/plugins/emoticons';
+import 'hugerte/plugins/emoticons/js/emojis';
+
+// NOTE: For the help plugin, you'll need to import the localized keyboard navigation help
+// even if it's in english.
+import 'hugerte/plugins/help';
+import 'hugerte/plugins/help/js/i18n/keynav/en.js';
+// Whichever languages you need...
+import 'hugerte/plugins/help/js/i18n/keynav/de.js';
+
+// In the `hugerte.init({})` call, set `skin_url` and `content_css` to `default` to make sure the bundled ones are used.
+hugerte.init({
+    selector: '#editor',
+    plugins: 'accordion advlist emoticons help', // etc.
+    skin_url: 'default',
+    content_css: 'default',
+});
+```
 
 ## Localization
 Download the [TinyMCE 6 language pack](https://download.tiny.cloud/tinymce/community/languagepacks/6/langs.zip), extract the languages you need, open all the files of the languages you need and replace the `tinymce` variable at the top by `hugerte`. Then, follow the [instructions by TinyMCE](https://www.tiny.cloud/docs/tinymce/6/ui-localization/#using-the-community-language-packs).
