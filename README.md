@@ -54,7 +54,7 @@ Integrations for Svelte, Angular, Blazor, jQuery and Ruby on Rails are following
 
 ## Bundling
 
-You can bundle all required files from HugeRTE into your JavaScript bundle using ES6 module importing syntax and Vite. We're going to check support for other bundlers in the future, too. TinyMCE already [provides docs for bundling](https://www.tiny.cloud/docs/tinymce/6/introduction-to-bundling-tinymce/) but it has an issue with bundling skins that we [fixed](https://github.com/hugerte/hugerte/commit/d62ccbfb11583b5ebb4177986666039da2fe50de) in HugeRTE 1.0.7.
+You can bundle all required files from HugeRTE into your JavaScript bundle using ES6 module importing syntax and Vite. We're going to check support for other bundlers in the future, too. TinyMCE already [provides docs for bundling](https://www.tiny.cloud/docs/tinymce/6/introduction-to-bundling-tinymce/) but it has an issue with bundling skins that we [fixed](https://github.com/hugerte/hugerte/commit/d62ccbfb11583b5ebb4177986666039da2fe50de) in HugeRTE 1.0.7. Going forward, bundling is the recommended way to include HugeRTE into your project. Make sure to outsource the HugeRTE imports into a separate chunk if you don't need HugeRTE on every page where you include your main bundled JS chunk.
 
 > [!WARNING]
 > Make sure you're using HugeRTE 1.0.7 or later so everything works.
