@@ -34,7 +34,7 @@ yarn add @hugerte/hugerte-react
 Then, you could copy an appropiate demo piece from the storybook file linked above into your project. **While the storybook file contains `import { Editor, IAllProps } from '../main/ts/components/Editor';`, you should import from `@hugerte/hugerte-react` instead.** If your code will contain non-trivial portions of demo code, add the text of the [LICENSE.txt](LICENSE.txt) file as a comment to your code or on some „Acknowledgements“ page to ensure legal compliance.
 
 ## TinyMCE React integration docs
-Instead of looking at the Storybook and copying code from there, you can also [visit this link which will redirect you to the TinyMCE docs for now which provide detailed reference](https://hugerte.org/docs/hugerte/1/react-ref). But, **note that we have changed some props**: Please view the [changelog](https://github.com/hugerte/hugerte-react/blob/main/CHANGELOG.md).
+Instead of looking at the Storybook and copying code from there, you can also [visit this link which will redirect you to the TinyMCE docs for now which provide detailed reference](https://hugerte.org/docs/hugerte/1/react-ref). But, **note that we have changed some props**: Please view the [changelog](https://github.com/hugerte/hugerte-react/blob/main/CHANGELOG.md). Additionally, contrary to what this page says in regard to bundling TinyMCE, we explicitly recommend you to bundle HugeRTE following [our docs](../README.md#bundling).
 
 ## Issues
 
