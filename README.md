@@ -79,7 +79,7 @@ import 'hugerte/icons/default';
 import 'hugerte/themes/silver';
 
 // The oxide skin (or you can use a custom one).
-import 'hugerte/skins/ui/oxide';
+import 'hugerte/skins/ui/oxide/skin.js';
 
 // The content skin provided by oxide (or a different skin you're using).
 import 'hugerte/skins/ui/oxide/content.js';
