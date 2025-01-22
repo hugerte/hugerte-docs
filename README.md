@@ -115,6 +115,7 @@ hugerte.init({
 
 ## Localization
 Download the [TinyMCE 6 language pack](https://download.tiny.cloud/tinymce/community/languagepacks/6/langs.zip), extract the languages you need, open all the files of the languages you need and replace the `tinymce` variable at the top by `hugerte`. Then, follow the [instructions by TinyMCE](https://www.tiny.cloud/docs/tinymce/6/ui-localization/#using-the-community-language-packs).
+If you're bundling all HugeRTE assets into one file (as the section above demonstrates), you can import the languge file too.
 
 ## Customization and Extension
 
