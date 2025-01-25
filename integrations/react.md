@@ -36,6 +36,10 @@ Then, you could copy an appropiate demo piece from the storybook file linked abo
 ## TinyMCE React integration docs
 Instead of looking at the Storybook and copying code from there, you can also [visit this link which will redirect you to the TinyMCE docs for now which provide detailed reference](https://hugerte.org/docs/hugerte/1/react-ref). But, **note that we have changed some props**: Please view the [changelog](https://github.com/hugerte/hugerte-react/blob/main/CHANGELOG.md). Additionally, contrary to what this page says in regard to bundling TinyMCE, we explicitly recommend you to bundle HugeRTE following [our docs](../README.md#bundling).
 
+## Migrating from the TinyMCE React component
+1. Replace `tinymce` by `hugerte` (`@tinymce/tinymce-react` to `@hugerte/hugerte-react`).
+2. Review the changed props in the [changelog](https://github.com/hugerte/hugerte-react/blob/main/CHANGELOG.md).
+
 ## Issues
 
 Have you found an issue with `hugerte-react` or do you have a feature request? Open up an [issue](https://github.com/hugerte/hugerte-react/issues) and let us know or submit a [pull request](https://github.com/hugerte/hugerte-react/pulls). *Note: for issues related to HugeRTE itself please visit the [HugeRTE repository](https://github.com/hugerte/hugerte).*
