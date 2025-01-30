@@ -134,7 +134,7 @@ import 'hugerte/plugins/help/js/i18n/keynav/de.js';
 hugerte.init({
     selector: '#editor',
     // Adjust this as needed
-    plugins: 'accordion advlist afile anchor autolink autoresize autosave charmap cleanpaste code codesample directionality fullscreen image insertdatetime link lists media nonbreaking pagebreak preview quickbars save searchreplace table template visualblocks visualchars wordcount emoticons help',
+    plugins: 'accordion advlist anchor autolink autoresize autosave charmap cleanpaste code codesample directionality fullscreen image insertdatetime link lists media nonbreaking pagebreak preview quickbars save searchreplace table template visualblocks visualchars wordcount emoticons help',
     skin_url: 'default',
     content_css: 'default',
 });
