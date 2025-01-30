@@ -91,7 +91,33 @@ import 'hugerte/skins/content/default/content.js';
 // This should correspond to your `plugins` config in the object passed to `hugerte.init()`.
 import 'hugerte/plugins/accordion';
 import 'hugerte/plugins/advlist';
-// etc. for the plugins you're using.
+import 'hugerte/plugins/anchor';
+import 'hugerte/plugins/autolink';
+import 'hugerte/plugins/autoresize';
+import 'hugerte/plugins/autosave';
+import 'hugerte/plugins/charmap';
+import 'hugerte/plugins/cleanpaste';
+import 'hugerte/plugins/code';
+import 'hugerte/plugins/directionality';
+import 'hugerte/plugins/fullscreen';
+import 'hugerte/plugins/image';
+// We'll have to investigate before recommending to use this one: https://github.com/hugerte/hugerte/issues/24
+// import 'hugerte/plugins/importcss';
+import 'hugerte/plugins/insertdatetime';
+import 'hugerte/plugins/link';
+import 'hugerte/plugins/lists';
+import 'hugerte/plugins/media';
+import 'hugerte/plugins/nonbreaking';
+import 'hugerte/plugins/pagebreak';
+import 'hugerte/plugins/preview';
+import 'hugerte/plugins/quickbars';
+import 'hugerte/plugins/save';
+import 'hugerte/plugins/searchreplace';
+import 'hugerte/plugins/table';
+import 'hugerte/plugins/template';
+import 'hugerte/plugins/visualblocks';
+import 'hugerte/plugins/visualchars';
+import 'hugerte/plugins/wordcount';
 
 // NOTE: For the emoticons plugin, you'll need two imports:
 import 'hugerte/plugins/emoticons';
@@ -107,7 +133,8 @@ import 'hugerte/plugins/help/js/i18n/keynav/de.js';
 // In the `hugerte.init({})` call, set `skin_url` and `content_css` to `default` to make sure the bundled ones are used.
 hugerte.init({
     selector: '#editor',
-    plugins: 'accordion advlist emoticons help', // etc.
+    // Adjust this as needed
+    plugins: 'accordion advlist afile anchor autolink autoresize autosave charmap cleanpaste code codesample directionality fullscreen image insertdatetime link lists media nonbreaking pagebreak preview quickbars save searchreplace table template visualblocks visualchars wordcount emoticons help',
     skin_url: 'default',
     content_css: 'default',
 });
