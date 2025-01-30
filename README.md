@@ -96,7 +96,6 @@ import 'hugerte/plugins/autolink';
 import 'hugerte/plugins/autoresize';
 import 'hugerte/plugins/autosave';
 import 'hugerte/plugins/charmap';
-import 'hugerte/plugins/cleanpaste';
 import 'hugerte/plugins/code';
 import 'hugerte/plugins/directionality';
 import 'hugerte/plugins/fullscreen';
