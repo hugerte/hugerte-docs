@@ -49,8 +49,9 @@ If you have been using TinyMCE before, you have to brute-force replace `tinymce`
 ## Integrations with Frameworks
 - Vue integration: View the [docs](integrations/vue.md) or [repo](https://github.com/hugerte/hugerte-vue).
 - React integration: View the [docs](integrations/react.md) or [repo](https://github.com/hugerte/hugerte-react).
+- Angular integration: View the [docs](integrations/angular.md) or [repo](https://github.com/hugerte/hugerte-angular).
 
-Integrations for Svelte, Angular, Blazor, jQuery and Ruby on Rails are following.
+Integrations for Svelte, Blazor, jQuery and Ruby on Rails are following.
 
 ## Bundling
 
