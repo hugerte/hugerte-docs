@@ -35,7 +35,7 @@ Then, you can use `<editor></editor>` iin your template. The following options a
 - `plugins`: An array or a string listing the plugins to be used by the editor. This will be added as the `plugins` option of object passed to the `hugerte.init()` method.
 - `toolbar`: An array or a string defining the items to be included in the editor's toolbar. This will be added as the `toolbar` option of object passed to the `hugerte.init()` method.
 - `modelEvents`: An array or a *space*-separated string specifying the events that should trigger an emit of the `NgModelChange`. Default is `change input undo redo`.
-- `allowedEvents`: An array or a *comma*-separated string specifying the events that should be allowed to trigger from the editor to the `hugerte-angular` component. By default, all events [defined in this array](https://github.com/hugerte/framework-integration-shared/blob/265d022c7e35159aed84239a8353ac92ada50aa7/src/Utils.ts#L12) plus `onInitNgModel` and `onPreInit` will be allowed to trigger.
+- `allowedEvents`: An array or a *comma*-separated string specifying the events that should be allowed to trigger from the editor to the `hugerte-angular` component. By default, all events [defined in this array](https://github.com/hugerte/framework-integration-shared/blob/265d022c7e35159aed84239a8353ac92ada50aa7/src/Utils.ts#L12), mapped to be `on`-prefixed, plus `onInitNgModel` and `onPreInit` will be allowed to trigger.
 - `ignoreEvents`: An array or a *comma*-separated string specifying the events that should not be allowed to trigger from the editor to the `hugerte-angular` component, no matter if `allowedEvents` is set or not.
 
 ## Self-hosting HugeRTE
@@ -110,7 +110,7 @@ Consult the [Angular documentation on reactive forms](https://angular.io/guide/r
 
 ## Event binding
 
-You can bind to [these events](https://github.com/hugerte/framework-integration-shared/blob/265d022c7e35159aed84239a8353ac92ada50aa7/src/Utils.ts#L12) plus `onInitNgModel` and `onPreInit` like this (except those you exclude by the `ignoreEvents` option and/or don't set in the `allowedEvents` option, if you include it):
+You can bind to any event in [the events list](https://github.com/hugerte/framework-integration-shared/blob/265d022c7e35159aed84239a8353ac92ada50aa7/src/Utils.ts#L12) (except those you exclude by the `ignoreEvents` option and/or don't set in the `allowedEvents` option, if you include it), but **you'll have to prefix each one with `on`**. Plus, the `onInitNgModel` and `onPreInit` events, which aren't included in the list linked above, are also supported.
 
 ```html
 <editor (onSelectionChange)="handleEvent($event)"></editor>
