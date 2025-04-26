@@ -44,14 +44,14 @@ Important links:
 
 ## Migrate from TinyMCE
 
-If you have been using TinyMCE before, you have to brute-force replace `tinymce` by `hugerte` in your code. In your package.json, make sure you use `1.0.4` as `hugerte` version – not the one you used for `tinymce` before. HugeRTE is based on TinyMCE 6.8.4, but it is even later because it contains some code from TinyMCE 7 (all until the [commit which changed the license](https://github.com/tinymce/tinymce/commit/1cfe7f6817c68d713971a3e1dbe0c9775a40ce6d)). See the [Changelog](https://github.com/hugerte/hugerte/blob/main/modules/hugerte/CHANGELOG.md) for details.
+If you have been using TinyMCE before, you have to globally replace `tinymce` by `hugerte` in your code. In your package.json, make sure you use `1.0.4` as `hugerte` version – not the one you used for `tinymce` before. HugeRTE is based on TinyMCE 6.8.4, but it is even later because it contains some code from TinyMCE 7 (all until the [commit which changed the license](https://github.com/tinymce/tinymce/commit/1cfe7f6817c68d713971a3e1dbe0c9775a40ce6d)). See the [Changelog](https://github.com/hugerte/hugerte/blob/main/modules/hugerte/CHANGELOG.md) for details.
 
 ## Integrations with Frameworks
 - Vue integration: View the [docs](integrations/vue.md) or [repo](https://github.com/hugerte/hugerte-vue).
 - React integration: View the [docs](integrations/react.md) or [repo](https://github.com/hugerte/hugerte-react).
 - Angular integration: View the [docs](integrations/angular.md) or [repo](https://github.com/hugerte/hugerte-angular).
 
-Integrations for Svelte, Blazor, jQuery and Ruby on Rails are following.
+Integrations for Svelte and jQuery are planned for release throughout May 2025. Integrations for Blazor and Ruby on Rails may get forked from their TinyMCE counterparts if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. An integration for Alpine.js may also be created if there's demand for it.
 
 ## Bundling
 
@@ -150,6 +150,31 @@ If you're bundling all HugeRTE assets into one file (as the section above demons
 Refer to the TinyMCE docs for now. Some links:
 - https://www.tiny.cloud/docs/tinymce/6/customize-ui/
 - https://www.tiny.cloud/docs/tinymce/6/apis/tinymce.root/
+
+## Plugins
+HugeRTE comes with various plugins that can enhance your editing experience. These can be activated by adding their IDs to the `plugins` option in the configuration object passed to the `hugerte.init` method. Providing instructions on using these plugins without referring to the TinyMCE docs is a work in progress.
+- accordion: Allows you to insert accordions into the editor via `Insert > Accordion`. See https://hugerte.org/docs/hugerte/1/advlist for more information.
+- advlist: https://hugerte.org/docs/hugerte/1/advlist
+- anchor: https://hugerte.org/docs/hugerte/1/anchor
+- autolink: https://hugerte.org/docs/hugerte/1/advlist
+- autoresize: https://hugerte.org/docs/hugerte/1/advlist
+- autosave: https://hugerte.org/docs/hugerte/1/autosave
+- charmap: https://hugerte.org/docs/hugerte/1/charmap
+- code: https://hugerte.org/docs/hugerte/1/code
+- codesample: https://hugerte.org/docs/hugerte/1/codesample
+- directionality: https://hugerte.org/docs/hugerte/1/directionality
+- emoticons: https://hugerte.org/docs/hugerte/1/emoticons
+- fullscreen: https://hugerte.org/docs/hugerte/1/fullscreen
+- help: https://hugerte.org/docs/hugerte/1/help
+- image: https://hugerte.org/docs/hugerte/1/image
+- importcss: https://hugerte.org/docs/hugerte/1/importcss. Warning: This plugin is affected by [a bug](https://github.com/hugerte/hugerte/issues/24).
+- TODO: Continue list and elaborate descriptions and instructions. For now, see https://hugerte.org/docs/hugerte/1/plugins/#open-source-plugins
+
+## Themes
+Themes allow you to fully customize the layout of the editor. They're pretty low-level. Unless you want to create a completely new layout for HugeRTE, you should create skins instead. The only official theme available in HugeRTE is the silver theme. If you'd like to get an impression of what it takes to build a new theme, you can [browse the silver theme codebase](https://github.com/hugerte/hugerte/blob/main/modules/hugerte/src/themes/silver).
+
+## Skins
+TODO
 
 ## Help shape the future of this project!
 After you have integrated HugeRTE into your project and tested it, we'd like to kindly ask you to spend two minutes on completing the survey available at the [HugeRTE homepage](https://hugerte.org). You don't need to answer in full sentences. Your feedback is very important for us because it shows us the engagement of the community and tells us how we can improve this project and what's most important for you.
