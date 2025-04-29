@@ -178,3 +178,6 @@ TODO
 
 ## Help shape the future of this project!
 After you have integrated HugeRTE into your project and tested it, we'd like to kindly ask you to spend two minutes on completing the survey available at the [HugeRTE homepage](https://hugerte.org). You don't need to answer in full sentences. Your feedback is very important for us because it shows us the engagement of the community and tells us how we can improve this project and what's most important for you.
+
+## Support us financially
+We appreciate every donation! You can sponsor on [our OpenCollective profile](https://opencollective.com/hugerte). If you'd like to get something out of a sponsorship, like personal support or custom development, please contact us beforehand by sending a mail to admin AT hugerte DOT org.
