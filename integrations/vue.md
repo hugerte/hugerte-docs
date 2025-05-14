@@ -35,9 +35,6 @@ Then, copy the demo that is appropriate for you from the repo linked above. **Re
 1. Replace `tinymce` by `hugerte` (`@tinymce/tinymce-vue` to `@hugerte/hugerte-vue`).
 2. Review the changes in the [changelog](https://github.com/hugerte/hugerte-vue/blob/main/CHANGELOG.md).
 
-## Storybook
-The repo also comes with a storybook. The storybook does not contain as many demos as the demos above, but it does show the basic abilities to use HugeRTE in an iframe, in inline mode, with synchronization between the editor and a textarea containing its HTML content output, and in disabled mode.
-
 ## Reference on the supported options on the HugeRTE Vue component
 - `cdn-version`: A string representing the version of HugeRTE to be loaded from the jsDelivr CDN. This is only applied if the `hugerteScriptSrc` prop is not set. By default, version 1 (that is, the latest minor and patch release of the major version 1) will be used. For more info about the possible version formats, see the [jsDelivr documentation](https://www.jsdelivr.com/documentation#id-npm).
 - `id`: A unique string identifier for the editor instance. If not provided, a unique id will be generated.
