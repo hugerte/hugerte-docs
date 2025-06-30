@@ -52,7 +52,7 @@ Then, copy the demo that is appropriate for you from the repo linked above. **Re
 ## Support
 
 The HugeRTE Vue component version 1.x only supports Vue 3. The HugeRTE Vue component version 2.x supports both Vue 3 and Vue 2, but if you'd like to use this library in a Vue 2 project, add `/vue2` to the package name when importing: `import Editor from '@hugerte/hugerte-vue/vue2'`.
-The HugeRTE Vue component version 1.x is not supported anymore. Please upgrade to 2.x. If you use the wrapper normally and with a bundler, there should be no breaking change for you, but please review the [changelog](https://github.com/hugerte/hugerte-vue/blob/main/CHANGELOG.md) as there is a possibility of breaking changes if you have been doing certain things.
+We recommend you to stay with the 1.x version until a 3.x is released if you are using Vue 3 because some changes made in the 2.x version are going to be reverted in 3.x.
 
 ## Issues
 
