@@ -51,7 +51,7 @@ If you have been using TinyMCE before, you have to globally replace `tinymce` by
 - React integration: View the [docs](integrations/react.md) or [repo](https://github.com/hugerte/hugerte-react).
 - Angular integration: View the [docs](integrations/angular.md) or [repo](https://github.com/hugerte/hugerte-angular).
 
-Integrations for Svelte and jQuery are planned for release throughout May 2025. Integrations for Blazor and Ruby on Rails may get forked from their TinyMCE counterparts if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. An integration for Alpine.js may also be created if there's demand for it.
+Integrations for Svelte, jQuery, Blazor and Ruby on Rails will get published (forked from their TinyMCE counterparts) if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. Or just ask for them anonymously in the survey at https://hugerte.org. It doesn't matter if only one person needs them or if it's for production or testing use. Just ask and we'll start providing and maintaining. An integration for Alpine.js may also be created if there's demand for it.
 
 ## Bundling
 
