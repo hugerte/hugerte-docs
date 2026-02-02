@@ -141,6 +141,24 @@ The [hugerte/hugerte-angular](https://github.com/hugerte/hugerte-angular) repo c
 
 This component requires Angular 17+.
 
+### Not yet Zoneless ( >=Angular v21 )
+* This integration still requires `zone.js` to ensure backward compatibility to older Angular versions. Therefore, if your application uses Angular v21 or higher, it needs to include `provideZoneDetection()` in its providers.
+
+```jsx
+import { NgModule, provideZoneChangeDetection } from '@angular/core';
+
+@NgModule({
+  declarations: [
+    // ...
+  ],
+  imports: [
+   // ...
+  ],
+  providers: [ provideZoneChangeDetection() ],
+  bootstrap: [ AppComponent ]
+})
+```
+
 ## Issues
 
 Have you found an issue with hugerte-angular or do you have a feature request? Open up an [issue](https://github.com/hugerte/hugerte-angular/issues) and let us know or submit a pull request by [forking this repo](https://github.com/hugerte/hugerte-angular/fork), making the appropiate changes,then going to the pull request tab in your fork and creating one. *Note: for issues concerning HugeRTE itself please visit the [HugeRTE repository](https://github.com/hugerte/hugerte).*
