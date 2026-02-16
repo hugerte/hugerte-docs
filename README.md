@@ -51,13 +51,14 @@ If you have been using TinyMCE before, you have to globally replace `tinymce` by
 - Vue integration: View the [docs](integrations/vue.md) or [repo](https://github.com/hugerte/hugerte-vue).
 - React integration: View the [docs](integrations/react.md) or [repo](https://github.com/hugerte/hugerte-react).
 - Angular integration: View the [docs](integrations/angular.md) or [repo](https://github.com/hugerte/hugerte-angular).
+- Blazor integration: View the [docs](integrations/blazor.md) or [repo](https://github.com/hugerte/hugerte-blazor).
 
 ### Inofficial community integrations
 These are maintained by the community – thank you!
 - [Ruby on Rails integration](https://github.com/liberaldev/hugerte-rails).
 - [Laravel Nova field](https://github.com/pekhota/nova-hugerte)
 
-Integrations for Svelte, jQuery and Blazor will get published (forked from their TinyMCE counterparts) if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. Or just ask for them anonymously in the survey at https://hugerte.org. It doesn't matter if only one person needs them or if it's for production or testing use. Just ask and we'll start providing and maintaining. An integration for Alpine.js may also be created if there's demand for it.
+Integrations for Svelte and jQuery will get published (forked from their TinyMCE counterparts) if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. Or just ask for them anonymously in the survey at https://hugerte.org. It doesn't matter if only one person needs them or if it's for production or testing use. Just ask and we'll start providing and maintaining. An integration for Alpine.js may also be created if there's demand for it.
 
 ## Bundling
 
