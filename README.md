@@ -163,8 +163,8 @@ HugeRTE comes with various plugins that can enhance your editing experience. The
 - accordion: Allows you to insert accordions into the editor via `Insert > Accordion`. See https://hugerte.org/docs/hugerte/1/advlist for more information.
 - advlist: https://hugerte.org/docs/hugerte/1/advlist
 - anchor: https://hugerte.org/docs/hugerte/1/anchor
-- autolink: https://hugerte.org/docs/hugerte/1/advlist
-- autoresize: https://hugerte.org/docs/hugerte/1/advlist
+- autolink: https://hugerte.org/docs/hugerte/1/autolink
+- autoresize: https://hugerte.org/docs/hugerte/1/autoresize
 - autosave: https://hugerte.org/docs/hugerte/1/autosave
 - charmap: https://hugerte.org/docs/hugerte/1/charmap
 - code: https://hugerte.org/docs/hugerte/1/code
