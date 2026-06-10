@@ -58,7 +58,7 @@ These are maintained by the community – thank you!
 - [Ruby on Rails integration](https://github.com/liberaldev/hugerte-rails).
 - [Laravel Nova field](https://github.com/pekhota/nova-hugerte)
 
-Integrations for Svelte and jQuery will get published (forked from their TinyMCE counterparts) if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. Or just ask for them anonymously in the survey at https://hugerte.org. It doesn't matter if only one person needs them or if it's for production or testing use. Just ask and we'll start providing and maintaining. An integration for Alpine.js may also be created if there's demand for it.
+Integrations for Svelte and jQuery will get published (forked from their TinyMCE counterparts) if there's demand for them – please [open a discussion](https://github.com/orgs/hugerte/discussions/new/choose) in case they'd be nice for you. It doesn't matter if only one person needs them or if it's for production or testing use. Just ask and we'll start providing and maintaining. An integration for Alpine.js may also be created if there's demand for it.
 
 ## Bundling
 
@@ -182,9 +182,6 @@ Themes allow you to fully customize the layout of the editor. They're pretty low
 
 ## Skins
 TODO
-
-## Help shape the future of this project!
-After you have integrated HugeRTE into your project and tested it, we'd like to kindly ask you to spend two minutes on completing the survey available at the [HugeRTE homepage](https://hugerte.org). You don't need to answer in full sentences. Your feedback is very important for us because it shows us the engagement of the community and tells us how we can improve this project and what's most important for you.
 
 ## Support us
 HugeRTE is currently not company-funded and maintained by a single person. We appreciate both donations and help with development. If you'd like to support us financially, you can sponsor on [our OpenCollective profile](https://opencollective.com/hugerte). If you'd like to get something out of a sponsorship, like personal support or custom development, please contact us beforehand by sending a mail to admin AT hugerte DOT org.
